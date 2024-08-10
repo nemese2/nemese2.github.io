@@ -157,7 +157,7 @@
 
 .head-text1 {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ffcccc;
@@ -168,8 +168,11 @@
 
 .body-container {
   position: relative;
-  background: #ffcccc;
+  background: #ffffff;
   height: 200vh;
+  background-image: url("assets/camo.png");
+  background-repeat: repeat;
+  background-size: calc(0.56 * (50vh + 50vw));
 }
 
 .summary-container {
@@ -183,6 +186,6 @@
 }
 
 .summary {
-  font-size: 1.5vw;
+  font-size: calc(1.1 * (1vw + 1vh));
   padding: 20px;
 }
