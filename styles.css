@@ -49,9 +49,8 @@
 }
 
 #bar-logo {
-  cursor: pointer
+  cursor: pointer;
   position: absolute;
-  top: 50%;
   transform: translate(0, 10%);
   z-index: 2;
 }
@@ -174,7 +173,7 @@
 .body-container {
   position: relative;
   background: #ffffff;
-  height: 110vh;
+  height: calc(80vh + 20vw);
   background-image: url("assets/camo.png");
   background-repeat: repeat;
   background-size: calc(0.56 * (50vh + 50vw));
@@ -210,7 +209,7 @@
   position: absolute;
   width: 30vw;
   border-radius: 16px;
-  top: 50%;
+  top: calc(2.7 * (15vh + 5vw));
   right: 52.5%;
 }
 
@@ -226,7 +225,7 @@
   height: auto;
   border-radius: 16px;
   left: 52.5%;
-  top: 50%;
+  top: calc(2.7 * (15vh + 5vw));
 }
 
 .footer {
@@ -238,7 +237,7 @@
 }
 
 .footer-container {
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 
 .footer-items {
@@ -249,4 +248,9 @@
   font-family: Spectral Italic;
   color: #bbbbbb;
   text-decoration: none;
+}
+
+.footer-items:hover {
+  color: #00cccc;
+  transition: all 0.5s ease;
 }
