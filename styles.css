@@ -176,15 +176,22 @@
 }
 
 .summary-container {
+  position: absolute;
   background: #ffffff;
   width: 30vw;
   height: auto;
   border-radius: 16px;
-  transform: translate(50%, 64px);
-
+  right: 52.5%;
+  top: 64px;
 }
 
 .summary {
   font-size: calc(1.1 * (1vw + 1vh));
   padding: 20px;
+}
+
+.summary-image {
+  position: relative;
+  left: 52.5%;
+  top: 64px;
 }
