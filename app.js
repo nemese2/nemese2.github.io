@@ -1,4 +1,4 @@
-const menu = document.querySelector('#mobile-menu')
+const menu = document.querySelector('.bar-toggle')
 const menuLinks = document.querySelector('.bar-menu')
 const scroll = document.querySelector('.head-image')
 

@@ -107,7 +107,7 @@
     border-radius: 16px;
   }
 
-  #mobile-menu {
+  .bar-toggle {
     position: absolute;
     top: 25%;
     right: 4%;
@@ -124,16 +124,16 @@
     transition: all 0.5s ease;
   }
 
-  #mobile-menu.is-active .bar:nth-child(1) {
+  .bar-toggle.is-active .bar:nth-child(1) {
     transform: translateY(8px) rotate(0.125turn);
     transition: all 0.5s ease;
   }
 
-  #mobile-menu.is-active .bar:nth-child(2) {
+  .bar-toggle.is-active .bar:nth-child(2) {
     opacity: 0;
   }
 
-  #mobile-menu.is-active .bar:nth-child(3) {
+  .bar-toggle.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-0.125turn);
     transition: all 0.5s ease;
   }
