@@ -66,6 +66,7 @@
 
 .bar-item {
   height: 80px;
+  padding: 0 1.5rem;
 }
 
 .bar-links {
@@ -74,7 +75,6 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  padding: 0 1.5rem;
   height: 100%;
   font-size: 20px;
 }
@@ -97,19 +97,19 @@
   .bar-menu {
     display: grid;
     grid-template-columns: auto;
-    padding: 5rem 10vw 2rem;
-    width: 100%;
+    padding: 1.5rem 0;
+    width: 80%;
+    left: 10%;
     position: absolute;
     transition: all 0.5s ease;
-    height: 300px;
     z-index: -1;
-    top: -490px;
+    top: -500px;
+    backdrop-filter: blur(20px) brightness(60%);
+    border-radius: 16px;
   }
 
   .bar-item {
-    backdrop-filter: blur(20px) brightness(60%);
-    height: 55px;
-    border-radius: 16px;
+    height: 80px;
   }
 
   .bar-toggle {
@@ -144,7 +144,7 @@
   }
 
   .bar-menu.active {
-    transform: translateY(500px);
+    transform: translateY(525px);
     transition: all 0.5s ease;
   }
 }
