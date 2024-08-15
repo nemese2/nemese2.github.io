@@ -27,7 +27,8 @@
 }
 
 .bar {
-  backdrop-filter: blur(20px) brightness(60%);
+  backdrop-filter: blur(20px);
+  background-color: rgba(0,0,0,0.3);
   height: 80px;
   display: flex;
   justify-content: center;
@@ -70,7 +71,7 @@
 }
 
 .bar-links {
-  color: #bbbbbb;
+  color: #dddddd;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,6 +99,7 @@
     width: 100%;
     opacity: 0.6;
     border-radius: 50%;
+    background: #dddddd;
   }
 
   #bar-logo {
@@ -118,7 +120,8 @@
     transition: all 0.5s ease;
     z-index: 3;
     top: -500px;
-    backdrop-filter: blur(20px) brightness(60%);
+    backdrop-filter: blur(20px);
+    background-color: rgba(0,0,0,0.3);
     border-radius: 16px;
     justify-content: center;
   }
@@ -167,9 +170,10 @@
 
 .head-container {
   position: relative;
-  text-align: center;
   height: 75vw;
   transform: translate(0, -80px);
+  display: flex;
+  justify-content: center;
 }
 
 .head-image {
@@ -178,13 +182,12 @@
 
 .head-text1 {
   position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: calc(11vh + 21vw);
   color: #ffcccc;
   font-family: Milestone Brush;
   font-size: 15vw;
   text-shadow: 5px 5px 25px black;
+  text-align: center;
 }
 
 .body-container {
