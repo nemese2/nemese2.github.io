@@ -23,6 +23,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Spectral', sans-serif;
+  --home-item-width: 40vw;
 }
 
 .bar {
@@ -83,7 +84,21 @@
   transition: all 0.5s ease;
 }
 
+.bar-line {
+  width: 2px;
+  height: 50%;
+  background: #aaaaaa;
+  border-radius: 50%;
+}
+
 @media screen and (max-width: 960px) {
+
+  .bar-line {
+    height: 2px;
+    width: 100%;
+    opacity: 0.6;
+    border-radius: 50%;
+  }
 
   #bar-logo {
     padding: 0 50px;
@@ -105,10 +120,12 @@
     top: -500px;
     backdrop-filter: blur(20px) brightness(60%);
     border-radius: 16px;
+    justify-content: center;
   }
 
   .bar-item {
     height: 80px;
+    padding: 0 20vw;
   }
 
   .bar-toggle {
@@ -130,7 +147,7 @@
 
   .bar-toggle.is-active .bar:nth-child(1) {
     transform: translateY(8px) rotate(0.125turn);
-    transition: all 0.5s ease;
+    transition: all 0.4s ease;
   }
 
   .bar-toggle.is-active .bar:nth-child(2) {
@@ -139,12 +156,12 @@
 
   .bar-toggle.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-0.125turn);
-    transition: all 0.5s ease;
+    transition: all 0.4s ease;
   }
 
   .bar-menu.active {
     transform: translateY(525px);
-    transition: all 0.5s ease;
+    transition: all 0.4s ease;
   }
 }
 
@@ -173,7 +190,7 @@
 .body-container {
   position: relative;
   background: #ffffff;
-  height: calc(80vh + 20vw);
+  height: calc(60vh + 40vw);
   background-image: url("assets/camo.png");
   background-repeat: repeat;
   background-size: calc(0.56 * (50vh + 50vw));
@@ -182,7 +199,7 @@
 .summary-container {
   position: absolute;
   background: #ffffff;
-  width: 30vw;
+  width: var(--home-item-width);
   height: auto;
   border-radius: 16px;
   right: 52.5%;
@@ -207,7 +224,7 @@
 
 #specialties-anim {
   position: absolute;
-  width: 30vw;
+  width: var(--home-item-width);
   border-radius: 16px;
   top: calc(2.7 * (15vh + 5vw));
   right: 52.5%;
@@ -221,7 +238,7 @@
 .specialties-container {
   position: absolute;
   background: #ffffff;
-  width: 30vw;
+  width: var(--home-item-width);
   height: auto;
   border-radius: 16px;
   left: 52.5%;
