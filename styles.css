@@ -211,7 +211,7 @@
 }
 
 .summary-image {
-  position: relative;
+  position: absolute;
   left: 52.5%;
   top: 64px;
 }
