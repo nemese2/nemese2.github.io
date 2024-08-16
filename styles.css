@@ -45,16 +45,15 @@
   height: 80px;
   z-index: 2;
   width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 0 50px;
+  padding: 0 4vw;
 }
 
 #bar-logo {
   cursor: pointer;
-  position: absolute;
-  transform: translate(0, 10%);
   z-index: 2;
+  display: flex;
+  padding: 8px 0;
+  align-items: center;
 }
 
 .bar-menu {
@@ -102,14 +101,6 @@
     background: #dddddd;
   }
 
-  #bar-logo {
-    padding: 0 50px;
-  }
-
-  .bar-container {
-    padding: 0;
-  }
-
   .bar-menu {
     display: grid;
     grid-template-columns: auto;
@@ -133,10 +124,9 @@
 
   .bar-toggle {
     position: absolute;
-    top: 25%;
-    right: 4%;
-    transform: translate(5%, 20%);
     cursor: pointer;
+    top: 30%;
+    right: 4vw;
   }
 
   .bar-toggle .bar {
@@ -178,6 +168,7 @@
 
 .head-image {
   position: relative;
+  width: 100%;
 }
 
 .head-text1 {
@@ -261,15 +252,19 @@
   justify-content: center;
   position: relative;
   display: grid;
+  width: 100%;
 }
 
 .footer-items {
+  width: calc(192px + 8vw);
   display: flex;
   justify-content: center;
   padding: 8px;
   font-family: Spectral Italic;
+  font-size: calc(75% + 0.5vw);
   color: #bbbbbb;
   text-decoration: none;
+  align-items: center;
 }
 
 .footer-items:hover {
@@ -279,9 +274,6 @@
 
 .footer-icons {
   position: relative;
-  display: grid;
-  align-items: center;
-  width: 16px;
-  height: 16px;
-  margin: 3px 8px 0 0;
+  width: calc(12px + 0.5vw);
+  margin-right: calc(3%);
 }
