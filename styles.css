@@ -279,5 +279,5 @@
 .footer-icons {
   position: relative;
   width: calc(12px + 0.5vw);
-  margin-right: calc(3%);
+  margin-right: 3%;
 }
