@@ -198,6 +198,7 @@
   border-radius: 16px;
   right: 52.5%;
   top: 64px;
+  box-shadow: 15px 15px 32px rgba(0,0,0,0.4);
 }
 
 .summary {
@@ -222,6 +223,8 @@
   border-radius: 16px;
   top: calc(2.7 * (15vh + 5vw));
   right: 52.5%;
+  background: #000000;
+  box-shadow: 15px 15px 32px rgba(0,0,0,0.6);
 }
 
 .specialties {
@@ -237,6 +240,7 @@
   border-radius: 16px;
   left: 52.5%;
   top: calc(2.7 * (15vh + 5vw));
+  box-shadow: 15px 15px 32px rgba(0,0,0,0.4);
 }
 
 .footer {
