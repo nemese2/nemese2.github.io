@@ -168,7 +168,6 @@
 
 .head-image {
   position: relative;
-  width: 100%;
 }
 
 .head-text1 {
@@ -280,4 +279,38 @@
   position: relative;
   width: calc(12px + 0.5vw);
   margin-right: 3%;
+}
+
+.backbutton-container {
+  width: 64px;
+  height: auto;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  left: 2%;
+  top: 2%;
+  z-index: 2;
+}
+
+.backbutton {
+  position: absolute;
+}
+
+.bio-head-container {
+  height: 30vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.bio-head-image {
+  position: relative;
+  width: 100%;
+}
+
+.bio-title {
+  position: absolute;
+  font-family: Spectral;
+  font-size: 64px;
+  top: 30%;
 }
