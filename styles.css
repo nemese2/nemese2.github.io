@@ -198,6 +198,12 @@
   right: 52.5%;
   top: 64px;
   box-shadow: 15px 15px 32px rgba(0,0,0,0.4);
+  transition: all 0.4s ease;
+}
+
+.summary-container:hover {
+  transform: translateY(-12px);
+  transition: all 0.4s ease;
 }
 
 .summary {
@@ -214,9 +220,15 @@
   position: absolute;
   left: 52.5%;
   top: 64px;
+  transition: all 0.4s ease;
 }
 
-#specialties-anim {
+.summary-image:hover {
+  transform: translateY(-12px);
+  transition: all 0.4s ease;
+}
+
+.specialties-anim {
   position: absolute;
   width: var(--home-item-width);
   border-radius: 16px;
@@ -224,6 +236,12 @@
   right: 52.5%;
   background: #000000;
   box-shadow: 15px 15px 32px rgba(0,0,0,0.6);
+  transition: all 0.4s ease;
+}
+
+.specialties-anim:hover {
+  transform: translateY(-12px);
+  transition: all 0.4s ease;
 }
 
 .specialties {
@@ -240,6 +258,12 @@
   left: 52.5%;
   top: calc(2.7 * (15vh + 5vw));
   box-shadow: 15px 15px 32px rgba(0,0,0,0.4);
+  transition: all 0.4s ease;
+}
+
+.specialties-container:hover {
+  transform: translateY(-12px);
+  transition: all 0.4s ease;
 }
 
 .footer {
@@ -294,10 +318,16 @@
 
 .backbutton {
   position: absolute;
+  transition: all 0.25s ease;
+}
+
+.backbutton:hover {
+  transform: translateY(4px);
+  transition: all 0.25s ease;
 }
 
 .bio-head-container {
-  height: 30vh;
+  height: 40vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -309,8 +339,32 @@
 }
 
 .bio-title {
+  color: #172433;
   position: absolute;
   font-family: Spectral;
-  font-size: 64px;
-  top: 30%;
+  font-size: 96px;
+  top: 20%;
+  display: grid;
+  text-align: center;
+}
+
+.bio-title-divider {
+  position: absolute;
+  top: 55%;
+}
+
+.bio-title-descriptors {
+  position: absolute;
+  color: #172433;
+  font-family: Spectral;
+  font-size: 40px;
+  text-align: center;
+  top: 72%;
+}
+
+.bio-body-container {
+  background: #ffffff;
+  height: 100vh;
+  z-index: 1;
+  position: relative;
 }

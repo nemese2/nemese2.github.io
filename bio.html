@@ -9,7 +9,7 @@
   <body>
     <div class="backbutton-container">
       <a href="/" class="backbutton">
-        <img src="assets/backbutton.svg" style="height:96px;width:auto;">
+        <img src="assets/backbutton.svg" style="height:64px;width:auto;">
       </a>
     </div>
 
@@ -20,6 +20,14 @@
           <img src="assets/camo2.png" style="width:100%;">
         </div>
         <div class="bio-title">NEMESE</div>
+        <div class="bio-title-divider">
+          <img src="assets/squiggle-underline.svg" style="width:512px;">
+        </div>
+        <div class="bio-title-descriptors">PATIENT. DEDICATED. TRUSTWORTHY.</div>
+      </div>
+
+      <div class="bio-body-container">
+
       </div>
 
       <div class="footer">
@@ -34,7 +42,16 @@
     </div>
 
     <script>
-      
+      const bioHeadImage = document.querySelector('.bio-head-image')
+
+      setInterval(function(){
+        window.width = document.body.clientWidth;
+      }, 10)
+
+      window.addEventListener('scroll', function(){
+        var value = 0 - window.scrollY * 0.35;
+        bioHeadImage.style.transform = `translateY(${value}px)`;
+      })
     </script>
   </body>
 </html>
