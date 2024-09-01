@@ -25,6 +25,26 @@
 
       <div class="bio-body-container">
         <img src="assets/galaxy.png" class="bio-body-bg" style="height:100%;width:100%;">
+        <div class="bio-layer1">
+          <div class="bio-history-container">
+            <div class="bio-history">I have been working with computers, digital art, and professional team leadership for over 6 years. I am currently a major in the area of Geography at my local community college, aiming to earn a doctorate and become a professor; I want to inspire others the same way others inspired me. A link to my <span style="font-family:Spectral Italic;">GitHub</span> profile, containing all of my coding work, is to the right.</div>
+          </div>
+          <a href="https://github.com/nemese2/" class="bio-github"><img src="assets/github.svg" style="width:calc(0.2 * (65vw + 35vh));height:auto;"></a>
+        </div>
+
+        <div class="bio-layer2">
+          <a href="https://www.youtube.com/@nemese2" class="bio-youtube"><img src="assets/youtube.svg" style="width:calc(0.2 * (65vw + 35vh));height:auto;"></a>
+          <div class="bio-video-container">
+            <div class="bio-video">Another of my greatest skills is the art of video editing. I'm capable of splitting & splicing cinematic, gaming, comedic, and miscellaneous content, including short movies — part of my prior experience — and video game clips. A link to my <span style="font-family:Spectral Italic;">YouTube</span> channel is to the left.</div>
+          </div>
+        </div>
+
+        <div class="bio-layer3">
+          <div class="bio-game-container">
+            <div class="bio-game">To pass the time when time needs passing, I find myself playing video games. I'm attuned to especially difficult challenges such as those present in roguelikes and metroidvanias. A link to my <span style="font-family:Spectral Italic;">Steam</span> page, containing many of my greatest accomplishments in gaming, is to the right.</div>
+          </div>
+          <a href="https://steamcommunity.com/id/nemese/" class="bio-steam"><img src="assets/steam.svg" style="width:calc(0.2 * (65vw + 35vh));height:auto;"></a>
+        </div>
 
       </div>
 
@@ -39,17 +59,5 @@
 
     </div>
 
-    <script>
-      const bioHeadImage = document.querySelector('.bio-head-image')
-
-      setInterval(function(){
-        window.width = document.body.clientWidth;
-      }, 10)
-
-      window.addEventListener('scroll', function(){
-        var value = 0 - window.scrollY * 0.35;
-        bioHeadImage.style.transform = `translateY(${value}px)`;
-      })
-    </script>
   </body>
 </html>
