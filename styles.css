@@ -322,49 +322,58 @@
 }
 
 .backbutton:hover {
-  transform: translateY(4px);
+  transform: translateY(-4px);
   transition: all 0.25s ease;
 }
 
 .bio-head-container {
-  height: 40vh;
-  position: relative;
+  width: 100%;
+  height: 45vh;
+  position: absolute;
   display: flex;
   justify-content: center;
-}
-
-.bio-head-image {
-  position: relative;
-  width: 100%;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 .bio-title {
-  color: #172433;
+  color: #ffffff;
   position: absolute;
   font-family: Spectral;
   font-size: 96px;
-  top: 20%;
+  top: 12.5%;
   display: grid;
   text-align: center;
+  text-shadow: 5px 5px 25px black;
 }
 
 .bio-title-divider {
   position: absolute;
-  top: 55%;
+  top: 45%;
 }
 
 .bio-title-descriptors {
   position: absolute;
-  color: #172433;
+  color: #ffffff;
   font-family: Spectral;
   font-size: 40px;
   text-align: center;
-  top: 72%;
+  top: 60%;
+  text-shadow: 5px 5px 10px rgb(0,0,0,0.7);
 }
 
 .bio-body-container {
-  background: #ffffff;
-  height: 100vh;
-  z-index: 1;
+  z-index: 0;
   position: relative;
+  background: #000000;
+  height: calc(1.5 * (60vh + 40vw));
+}
+
+.bio-body-bg {
+  position: absolute;
+  filter: blur(24px);
+  object-fit: cover;
+  opacity: 0.6;
 }
