@@ -230,12 +230,8 @@
 
 .specialties-anim {
   position: absolute;
-  width: var(--home-item-width);
-  border-radius: 16px;
   top: calc(2.7 * (15vh + 5vw));
   right: 52.5%;
-  background: #000000;
-  box-shadow: 15px 15px 32px rgba(0,0,0,0.6);
   transition: all 0.4s ease;
 }
 
