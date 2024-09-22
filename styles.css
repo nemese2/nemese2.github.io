@@ -1,9 +1,4 @@
 @font-face {
-  font-family: Spotlight;
-  src: url(assets/spotlight.ttf);
-}
-
-@font-face {
   font-family: Milestone Brush;
   src: url(assets/milestone.ttf);
 }
@@ -41,7 +36,7 @@
 
 .bar-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: 80px;
   z-index: 2;
   width: 100%;
@@ -58,7 +53,7 @@
 
 .bar-item {
   height: 80px;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
 }
 
 .bar-links {
@@ -77,8 +72,8 @@
 }
 
 .bar-line {
-  width: 2px;
-  height: 50%;
+  width: 10vw;
+  height: 2px;
   background: #aaaaaa;
   border-radius: 50%;
 }
