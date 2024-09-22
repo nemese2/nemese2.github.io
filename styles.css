@@ -48,14 +48,6 @@
   padding: 0 4vw;
 }
 
-#bar-logo {
-  cursor: pointer;
-  z-index: 2;
-  display: flex;
-  padding: 8px 0;
-  align-items: center;
-}
-
 .bar-menu {
   display: flex;
   align-items: center;
