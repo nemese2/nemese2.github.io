@@ -357,7 +357,7 @@
 
 .bio-body-bg {
   position: absolute;
-  filter: blur(24px);
+  filter: blur(calc(0.0225 * (30vw + 70vh)));
   object-fit: cover;
   opacity: 0.65;
 }
