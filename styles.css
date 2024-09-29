@@ -171,9 +171,8 @@
   position: relative;
   background: #ffffff;
   height: calc(60vh + 40vw);
-  background-image: url("assets/camo.png");
-  background-repeat: repeat;
-  background-size: calc(0.56 * (50vh + 50vw));
+  background-image: url("assets/camo.gif");
+  background-size: cover;
 }
 
 .summary-container {
@@ -327,7 +326,12 @@
   top: 0%;
   display: grid;
   text-align: center;
-  text-shadow: 5px 5px 25px black;
+  transition: all 0.4s ease;
+}
+
+.bio-title:hover {
+  text-shadow: 0px 0px calc(0.0175 * (30vw + 70vh)) #ffffff;
+  transition: all 0.25s ease;
 }
 
 .bio-title-divider {
@@ -373,15 +377,16 @@
 .bio-history-container {
   background: rgba(0,0,0,0.25);
   position: relative;
-  border-radius: 16px;
+  border-radius: 2px;
+  border: 3px solid #ffffff;
   width: 45vw;
   height: auto;
-  box-shadow: 5px 5px 20px rgba(255,255,255,0.6);
   transition: all 0.4s ease;
+  box-shadow: calc(0.015 * (30vw + 70vh)) calc(0.015 * (30vw + 70vh)) rgba(24,24,24,0.45);
 }
 
 .bio-history-container:hover {
-  transform: translateY(-12px);
+  transform: scale(1.05) skew(-2.4deg);
   transition: all 0.4s ease;
 }
 
@@ -398,7 +403,7 @@
 }
 
 .bio-github:hover {
-  transform: translateY(-12px);
+  transform: scale(1.05);
   transition: all 0.4s ease;
 }
 
@@ -413,15 +418,16 @@
 .bio-video-container {
   background: rgba(0,0,0,0.25);
   position: relative;
-  border-radius: 16px;
+  border-radius: 2px;
+  border: 3px solid #ffffff;
   width: 45vw;
   height: auto;
-  box-shadow: 5px 5px 20px rgba(255,255,255,0.6);
   transition: all 0.4s ease;
+  box-shadow: calc(0.015 * (30vw + 70vh)) calc(0.015 * (30vw + 70vh)) rgba(24,24,24,0.45);
 }
 
 .bio-video-container:hover {
-  transform: translateY(-12px);
+  transform: scale(1.05) skew(2.4deg);
   transition: all 0.4s ease;
 }
 
@@ -438,7 +444,7 @@
 }
 
 .bio-youtube:hover {
-  transform: translateY(-12px);
+  transform: scale(1.05);
   transition: all 0.4s ease;
 }
 
@@ -453,15 +459,16 @@
 .bio-game-container {
   background: rgba(0,0,0,0.25);
   position: relative;
-  border-radius: 16px;
+  border-radius: 2px;
+  border: 3px solid #ffffff;
   width: 45vw;
   height: auto;
-  box-shadow: 5px 5px 20px rgba(255,255,255,0.6);
   transition: all 0.4s ease;
+  box-shadow: calc(0.015 * (30vw + 70vh)) calc(0.015 * (30vw + 70vh)) rgba(24,24,24,0.45);
 }
 
 .bio-game-container:hover {
-  transform: translateY(-12px);
+  transform: scale(1.05) skew(-2.4deg);
   transition: all 0.4s ease;
 }
 
@@ -478,7 +485,7 @@
 }
 
 .bio-steam:hover {
-  transform: translateY(-12px);
+  transform: scale(1.05);
   transition: all 0.4s ease;
 }
 
